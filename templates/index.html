@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>荐你所想 - 图书推荐系统首页</title>
+    <style>
+        {#ul {list-style: none;}#}
+    </style>
+</head>
+<body>
+<h3>请给这些书打分（1-10），我们将以此为依据为您推荐图书</h3>
+<span>如果看不到封面，请刷新重试，原因是封面图片服务器返回的是空图。</span>
+<form method="post" action="/submitinfo">
+{#    <label>#}
+{#        <input type="text" name="001" value="0001">#}
+{#    </label>#}
+    <ol>
+{#        <input type="text" name="002" value="0002">s#}
+{#        <li id="0671746693">#}
+{#            <p>书名：CCCCC，作者：DDDDD</p>#}
+{#            <img src="http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg" width="150px" alt="图书封面">#}
+{#            <label>#}
+{#                <input type="text" name="0671746693Rating" value="">#}
+{#            </label>#}
+{#        </li>#}
+
+{#        Acccc为长度信息#}
+        {% for x in Acccc %}
+            <li id="{{ ISBNList[x] }}">
+                <p>书名：{{ Title[x] }}，作者：{{ Author[x] }}，ISBN：{{ ISBNList[x] }}</p>
+                <img src="{{ fengMian[x] }}" width="150px" alt="图书封面">
+                <span>评分：</span>
+                <label>
+                    <input type="text" name="Ratings" value="">
+                </label>
+            </li>
+        {% endfor %}
+    </ol>
+    <input type="submit" value="提交评分" style='font-size:20px'>
+</form>
+</body>
+</html>

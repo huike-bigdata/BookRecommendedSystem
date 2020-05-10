@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="zh-cmn-Hans">
+<head>
+    <meta charset="UTF-8">
+    <title>荐你所想</title>
+    <style>
+        {#ul {list-style: none;}#}
+    </style>
+</head>
+<body>
+<h3>这些是我们为您推荐的书</h3>
+<form method="post" action="/submitinfo">
+{#    <label>#}
+{#        <input type="text" name="001" value="0001">#}
+{#    </label>#}
+    <ol>
+{#        <input type="text" name="002" value="0002">s#}
+{#        <li id="0671746693">#}
+{#            <p>书名：CCCCC，作者：DDDDD</p>#}
+{#            <img src="http://images.amazon.com/images/P/0195153448.01.LZZZZZZZ.jpg" width="150px" alt="图书封面">#}
+{#            <label>#}
+{#                <input type="text" name="0671746693Rating" value="">#}
+{#            </label>#}
+{#        </li>#}
+
+{#        Acccc为长度信息#}
+        {% for x in Acccc %}
+            <li id="{{ ISBNList[x] }}">
+                <p>书名：{{ Title[x] }}，作者：{{ Author[x] }}，ISBN：{{ ISBNList[x] }}</p>
+                <img src="{{ fengMian[x] }}" width="150px" alt="图书封面">
+{#                <p>评分：</p>#}
+{#                <label>#}
+{#                    <input type="text" name="Ratings" value="{{ x }}">#}
+{#                </label>#}
+            </li>
+        {% endfor %}
+    </ol>
+{#    <input type="submit" value="提交评分">#}
+</form>
+
+<a href="/">点我回首页</a>
+</body>
+</html>

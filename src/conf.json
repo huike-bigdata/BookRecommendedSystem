@@ -1,0 +1,5 @@
+{
+  "rating_num":50,
+  "max_iter": 1000,
+  "TrainingOrLoad": "L"
+}
