@@ -16,7 +16,7 @@ Python3.8
 
 #### 如果您关心项目的开发过程，请看：
 
-这个仓库只存放完成度比较高的成品代码，对于用于开发所使用的的拥有历史提交的仓库分为两个：
+这个仓库只存放完成度比较高的成品代码，专为比赛提交作品服务，对于用于开发所使用的的拥有历史提交的仓库分为两个：
 
-1. 模型训练/模型预测代码的仓库（开发前期：模型方面的代码，不含数据集以及成品模型）：https://github.com/huike-bigdata/BookRecommended
-2. Flask+模型训练/模型预测代码的仓库（开发后期：网站+模型方面的代码，不含数据集以及成品模型。本次所提交的作品就来自于这个仓库的内容（但增加了数据集与模型）。）：https://github.com/huike-bigdata/BookRecommendedSystem
+1. 模型训练/模型预测代码的仓库（开发前期内容，模型方面的代码，不含数据集以及成品模型）：https://github.com/huike-bigdata/BookRecommended
+2. Flask+模型训练/模型预测代码的仓库（开发后期内容，网站+模型方面的代码，不含数据集以及成品模型。本次所提交的作品就来自于这个仓库的内容（但增加了数据集与模型）。）：https://github.com/huike-bigdata/BookRecommendedSystem-dev
